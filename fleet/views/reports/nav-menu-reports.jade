@@ -1,0 +1,47 @@
+li.accordion-group
+		a(data-toggle='collapse',data-parent='#nav-mainmenu', href='#reports')
+			span.icon.iconfa-bar-chart
+			span.text Reports
+			span.badge.pull-right 4
+		
+		ul.nav-submenu.in.collapse#reports(style='height: auto;')
+			li
+				a(href='/report-general')
+					span.icon.iconfugue16-dashboard
+					| General
+			li
+				a(href='/report-trip')
+					span.icon.iconfugue16-edit
+					| Trip Report
+			li.accordion-group
+				a.collapsed(data-toggle='collapse',data-parent='#reports', href='#violation')
+					span.icon.iconfugue16-bamboos
+					| Violation
+					span.caret.pull-right
+				ul.nav-subitem.collapse#violation(style='height: 0px;')
+					li
+						a(href='report-violation-daily')
+							span.icon.iconfugue16-edit-code 
+							| Daily
+					li
+						a(href='report-violation-monthly')
+							span.icon.iconfugue16-edit-code 
+							| Monthly
+			li.accordion-group
+				a.collapsed(data-toggle='collapse',data-parent='#reports', href='#alerts')
+					span.icon.icon-exclamation-sign
+					| Alert Exception
+					span.caret.pull-right
+				ul.nav-subitem.collapse#alerts(style='height: 0px;')
+					li
+						a(href='report-alert-hb')
+							span.icon.iconfugue16-edit-code 
+							| Harsh Breaking
+					li
+						a(href='report-alert-ha')
+							span.icon.iconfugue16-edit-code 
+							| Harsh Acceleration
+					li
+						a(href='report-alert-panic')
+							span.icon.iconfugue16-edit-code 
+							| Panic

@@ -1,0 +1,38 @@
+li.accordion-group
+		a(data-toggle='collapse',data-parent='#nav-mainmenu', href='#trackings')
+			span.icon.iconfa-road
+			span.text Trackings
+			span.badge.pull-right 4
+		
+		ul.nav-submenu.in.collapse#trackings(style='height: auto;')
+			li
+				a(href='/tracking-on-map')
+					span.icon.iconfugue16-dashboard
+					| Tracking On Map
+			li
+				a(href='/tracking-instant')
+					span.icon.iconfugue16-edit
+					| Instant Tracking
+			li
+				a(href='/tracking-by-user')
+					span.icon.iconfugue16-edit
+					| Tracking By User
+							
+			li.accordion-group
+				a.collapsed(data-toggle='collapse',data-parent='#reports', href='#dynamic-status')
+					span.icon.iconfugue16-bamboos
+					| Dynamic Status
+					span.caret.pull-right
+				ul.nav-subitem.collapse#dynamic-status(style='height: 0px;')
+					li
+						a(href='/tracking-vehicle')
+							span.icon.iconfugue16-edit-code 
+							| Vehicle Status
+					li
+						a(href='/tracking-alert')
+							span.icon.iconfugue16-edit-code 
+							| Alert Status
+					li
+						a(href='/tracking-sensor')
+							span.icon.iconfugue16-edit-code 
+							| Sensor Status

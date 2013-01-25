@@ -1,0 +1,19 @@
+li.accordion-group
+		a(data-toggle='collapse',data-parent='#nav-mainmenu', href='#admins')
+			span.icon.iconfa-group
+			span.text Admin
+			span.badge.pull-right 3
+		
+		ul.nav-submenu.in.collapse#admins(style='height: auto;')
+			li
+				a(href='/admin-dashboard')
+					span.icon.iconfugue16-dashboard
+					| Dashboard
+			li
+				a(href='/admin-user')
+					span.icon.iconfugue16-user
+					| User Management
+			li
+				a(href='/admin-vehicle')
+					span.icon.iconfugue16-truck
+					| Vehicle Management 

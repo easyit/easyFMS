@@ -1,0 +1,28 @@
+li.accordion-group
+		a(data-toggle='collapse',data-parent='#nav-mainmenu', href='#generals')
+			span.icon.iconfa-home
+			span.text Generals
+			span.badge.pull-right 1
+		ul.nav-submenu.in.collapse#generals(style='height: auto;')
+			li
+				a(href='/general-dashboard')
+					span.icon.iconfugue16-dashboard
+					| Dashboard
+			//- li
+			//- 	a(href='/dashboard')
+			//- 		span.icon.iconfugue16-edit
+			//- 		| Dashboard2
+			//- li.accordion-group
+			//- 	a.collapsed(data-toggle='collapse',data-parent='#generals', href='#icons')
+			//- 		span.icon.iconfugue16-bamboos
+			//- 		| Icons
+			//- 		span.caret.pull-right
+			//- 	ul.nav-subitem.collapse#icons(style='height: 0px;')
+			//- 		li
+			//- 			a(href='1.html')
+			//- 				span.icon.iconfugue16-edit-code 
+			//- 				| Glyph icons
+			//- 		li
+			//- 			a(href='2.html')
+			//- 				span.icon.iconfugue16-edit-code 
+			//- 				| Glyph icons

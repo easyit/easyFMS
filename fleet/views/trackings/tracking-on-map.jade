@@ -1,0 +1,27 @@
+extends ../layout
+
+block main-content-block
+	div#main-content
+		p &nbsp;
+
+		ul.breadcrumb
+			li
+				a(href='#') FMS
+			li
+				a(href='#') Tracking
+			li
+				a(href='#') Tracking On Maps
+		h3 Tracking On Map
+			small 
+
+		//- div.row-fluid
+		//- 	div.span12
+				
+
+		div.row-fluid
+			div.span12
+				include widgets/selection-form
+				include widgets/map
+block scripts
+	script(src='http://maps.google.com/maps/api/js?sensor=false')
+	script(src='/js/trackings/tracking-on-map.js')

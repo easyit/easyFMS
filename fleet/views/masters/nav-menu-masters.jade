@@ -1,0 +1,34 @@
+li.accordion-group
+		a(data-toggle='collapse',data-parent='#nav-mainmenu', href='#masters')
+			span.icon.iconfa-wrench
+			span.text Master
+			span.badge.pull-right 3
+		
+		ul.nav-submenu.in.collapse#masters(style='height: auto;')
+			li
+				a(href='/master-geofence')
+					span.icon.iconfugue16-dashboard
+					| Geofence
+			li
+				a(href='/master-vehicle')
+					span.icon.iconfugue16-edit
+					| Assign Vehicle
+							
+			li.accordion-group
+				a.collapsed(data-toggle='collapse',data-parent='#masters', href='#master-vehicles')
+					span.icon.iconfugue16-bamboos
+					| Vehicle Master
+					span.caret.pull-right
+				ul.nav-subitem.collapse#master-vehicles(style='height: 0px;')
+					li
+						a(href='/master-fuel')
+							span.icon.iconfugue16-edit-code 
+							| Fuel Calibration
+					li
+						a(href='/master-employee')
+							span.icon.iconfugue16-edit-code 
+							| Employees
+					li
+						a(href='/master-violation')
+							span.icon.iconfugue16-edit-code 
+							| Violation Settings

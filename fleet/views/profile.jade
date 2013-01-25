@@ -1,0 +1,38 @@
+div.profile(data-detach='profile')
+		div.profile-pic
+			div.btn-group
+				img.dropdown-toggle(src='/img/avatar/40x40/avatar5.png',data-toggle='dropdown')
+				ul.dropdown-menu
+					li
+						a(href='#')
+							i.cion.iconfa-pencil
+							| Edit Profile
+					li
+						a(href='#')
+							i.cion.iconfa-cog
+							| Settings
+					li.divider					
+					li
+						a(href='#')
+							i.cion.iconfa-off
+							| Logout
+			span.caret
+
+		div.profile-info
+			span.name	Chong
+			span.job	CEO
+
+		div.profile-panel
+			div.profile-panel-menu#panel-message
+				a.menu(href='#',data-toggle='dropdown')
+					i.icon.icon-envelope
+					span.text Alerts
+					span.label.label-important 13
+				ul.dropdown-menu(role='menu')
+
+			div.profile-panel-menu#panel-notification
+				a.menu(href='#',data-toggle='dropdown')
+					i.icon.icon-bell
+					span.text Messages
+					span.label.label-important 8
+				ul.dropdown-menu(role='menu')

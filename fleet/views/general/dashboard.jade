@@ -1,0 +1,45 @@
+extends ../layout
+
+block main-content-block
+	div#main-content
+		p &nbsp;
+
+		ul.breadcrumb
+			li
+				a(href='#') FMS
+			li
+				a(href='#') Generals
+			li
+				a(href='#') Dashboard
+		h3 Dashboard
+			small  
+
+		
+		
+
+		div.row-fluid
+			div.span12
+				include widgets/vehicle-summary
+
+				h3 Status
+					//- div.row-fluid
+					//- 	div.span12
+					//- 		include widgets/vehicle-speed-top
+					div.row-fluid
+						div.span8
+							include widgets/vehicle-violation-count
+						div.span4
+							include widgets/vehicle-speed-top
+					div.row-fluid
+						div.span6
+							include widgets/vehicle-polling-status
+						div.span6
+							include widgets/vehicle-violation-summary
+
+block scripts
+	script(src='/js/plugins/flot/jquery.flot.js')
+	script(src='/js/plugins/flot/jquery.flot.pie.js')
+	script(src='/js/general/widgets/vehicle-polling-status.js')
+	script(src='/js/general/widgets/vehicle-violation-count.js')
+	script(src='/js/general/widgets/vehicle-violation-summary.js')
+	script(src='/js/general/dashboard.js')
